@@ -61,7 +61,6 @@ $(document).ready(function(){
                         $('#success-message').fadeIn()
                         
                     }, function(error) {
-                        document.body.setAttribute('data-emailjs-error', (error && (error.text || error.message)) || 'unknown');
                         $('#contactForm').fadeOut()
                         $('#error-message').fadeIn()
                         document.body.scrollTop = 0; // For Safari
