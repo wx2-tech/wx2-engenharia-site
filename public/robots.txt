@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wx2engenharia.com.br/sitemap.xml
