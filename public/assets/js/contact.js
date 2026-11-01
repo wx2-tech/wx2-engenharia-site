@@ -55,13 +55,12 @@ $(document).ready(function(){
                 }
             },
             submitHandler: function(form) {
-                emailjs.sendForm('service_hbiwhag', '86zy3nr', form)
+                emailjs.sendForm('service_hbiwhag', 'template_n6ezkad', form)
                     .then(function() {
                         window.location.href="obrigado.html"
                         $('#success-message').fadeIn()
                         
                     }, function(error) {
-                        document.body.setAttribute('data-emailjs-error', (error && (error.text || error.message)) || 'unknown');
                         $('#contactForm').fadeOut()
                         $('#error-message').fadeIn()
                         document.body.scrollTop = 0; // For Safari
