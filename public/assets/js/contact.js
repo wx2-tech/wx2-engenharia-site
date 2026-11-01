@@ -6,7 +6,7 @@ $(document).ready(function(){
     
     jQuery.validator.addMethod('answercheck', function (value, element) {
         return this.optional(element) || /^\bcat\b$/.test(value)
-    }, "type the correct answer -_-");
+    }, "Digite a resposta correta.");
    
 
     $('#success-message').hide()
@@ -40,7 +40,7 @@ $(document).ready(function(){
                 },
                 subject: {
                     required: "Digite o assunto da mensagem",
-                    minlength: "your subject must consist of at least 4 characters"
+                    minlength: "O assunto deve ter pelo menos 4 caracteres."
                 },
                 phone: {
                     required: "Digite seu telefone",
@@ -51,7 +51,7 @@ $(document).ready(function(){
                 },
                 message: {
                     required: "Digite a mensagem",
-                    minlength: "thats all? really?"
+                    minlength: "Digite uma mensagem com pelo menos 4 caracteres."
                 }
             },
             submitHandler: function(form) {
