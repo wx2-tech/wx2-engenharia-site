@@ -146,8 +146,6 @@
   text-transform: uppercase;
   cursor: pointer;
 }
-
-
 .boxedsm-btn:hover {
   background: #14435c;
   color: #fff !important;
@@ -3448,6 +3446,390 @@ hero-btn {
   top: 100%;
 }
 
+/* Menu de serviços organizado por público */
+.main-header .main-menu ul ul.submenu.services-menu {
+  background: #0d2d3e;
+  border-top: 3px solid #d80614;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.24);
+  width: 420px;
+  max-width: calc(100vw - 24px);
+  padding: 10px 0;
+}
+
+.main-header .main-menu ul > li.services-root.is-open > ul.services-menu {
+  visibility: visible;
+  opacity: 1;
+  top: 100%;
+}
+
+.main-header .main-menu ul > li.services-root.is-open > .services-menu-toggle {
+  background: #0d2d3e;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.12);
+  color: #fff;
+}
+
+.main-header .main-menu ul ul.submenu.services-menu > li.services-overview {
+  margin: 0 0 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.main-header .main-menu ul ul.submenu.services-menu > li.services-overview > a {
+  padding: 6px 12px 10px !important;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 13px;
+}
+
+.main-header .main-menu ul ul.submenu.services-menu > li.service-group {
+  margin-left: 0;
+}
+
+.main-header .main-menu ul ul.submenu.services-menu > li.service-group > .service-category-toggle {
+  margin: 0;
+  padding: 10px 12px !important;
+  border-radius: 3px;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.main-header .main-menu ul ul.submenu.services-menu > li.service-group.is-open > .service-category-toggle {
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.main-header .main-menu ul ul.submenu.services-menu > li.service-group-industry > .service-category-toggle {
+  border-left: 4px solid #f2a541;
+  background: rgba(242, 165, 65, 0.16);
+}
+
+.main-header .main-menu ul ul.submenu.services-menu > li.service-group-condo > .service-category-toggle {
+  border-left: 4px solid #31b77a;
+  background: rgba(49, 183, 122, 0.16);
+}
+
+.main-header .main-menu ul ul.submenu.services-menu > li.service-group-spda > .service-category-toggle {
+  border-left: 4px solid #e56b5d;
+  background: rgba(229, 107, 93, 0.16);
+}
+
+.main-header .main-menu ul ul.submenu.services-menu > li.service-group-grounding > .service-category-toggle {
+  border-left: 4px solid #5aa9e6;
+  background: rgba(90, 169, 230, 0.16);
+}
+
+.main-header .main-menu ul ul.submenu.services-menu > li.service-group-studies > .service-category-toggle {
+  border-left: 4px solid #f2a541;
+  background: rgba(242, 165, 65, 0.16);
+}
+
+.main-header .main-menu ul ul.submenu.services-menu > li.service-group-nr10 > .service-category-toggle {
+  border-left: 4px solid #9b8afb;
+  background: rgba(155, 138, 251, 0.16);
+}
+
+.main-header .main-menu ul ul.submenu.services-menu > li.service-group > .service-category-toggle:hover {
+  padding-left: 16px !important;
+  color: #ffffff;
+}
+
+.main-header .main-menu ul ul.submenu.services-menu ul.service-category-menu {
+  position: static;
+  top: auto;
+  left: auto;
+  width: auto;
+  max-height: 0;
+  overflow: hidden;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  padding: 0 !important;
+  background: transparent;
+  box-shadow: none;
+  transition: max-height 0.25s ease, opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.main-header .main-menu ul ul.submenu.services-menu > li.service-group.is-open > ul.service-category-menu {
+  max-height: 1200px;
+  visibility: visible !important;
+  opacity: 1 !important;
+  background: rgba(4, 20, 30, 0.58);
+  border-left: 3px solid rgba(255, 255, 255, 0.28);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+  margin: 0 0 8px;
+  padding: 4px 0 8px !important;
+}
+
+.main-header .main-menu ul ul.submenu.services-menu ul.service-category-menu > li > a {
+  padding: 6px 16px 6px 34px !important;
+  color: #fdfdfd;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.main-header .main-menu ul ul.submenu.services-menu ul.service-category-menu > li > a:hover {
+  padding-left: 38px !important;
+  color: #ffffff;
+}
+
+.main-header .main-menu ul ul.submenu.services-menu ul.service-category-menu > li.service-subgroup-label {
+  padding: 8px 16px 3px 34px;
+  background: #092434;
+  color: #c9e4ed;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* A camada adicional do SPDA separa os serviços por público. */
+.main-header .main-menu ul ul.submenu.services-menu ul.service-category-menu > li.service-audience {
+  margin: 0;
+}
+
+.main-header .main-menu ul ul.submenu.services-menu ul.service-category-menu > li.service-audience > .service-audience-toggle {
+  display: block;
+  margin: 4px 0;
+  padding: 8px 12px !important;
+  border-radius: 3px;
+  background: #092434;
+  color: #dff5fb;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.35;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.main-header .main-menu ul ul.submenu.services-menu ul.service-category-menu > li.service-audience-industry > .service-audience-toggle {
+  border-left: 4px solid #f2a541;
+}
+
+.main-header .main-menu ul ul.submenu.services-menu ul.service-category-menu > li.service-audience-condo > .service-audience-toggle {
+  border-left: 4px solid #31b77a;
+}
+
+.main-header .main-menu ul ul.submenu.services-menu ul.service-category-menu > li.service-audience.is-open > .service-audience-toggle {
+  background: #14435c;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.22);
+  color: #ffffff;
+}
+
+.main-header .main-menu ul ul.submenu.services-menu ul.service-category-menu ul.service-audience-menu {
+  position: static;
+  top: auto;
+  left: auto;
+  width: auto;
+  max-height: 0 !important;
+  overflow: hidden;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  padding: 0 !important;
+  background: rgba(4, 20, 30, 0.58);
+  border-left: 3px solid rgba(255, 255, 255, 0.28);
+  box-shadow: none;
+  margin: 0 0 6px;
+  transition: max-height 0.25s ease, opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.main-header .main-menu ul ul.submenu.services-menu ul.service-category-menu > li.service-audience.is-open > ul.service-audience-menu {
+  max-height: 800px !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  top: auto !important;
+  padding: 4px 0 6px !important;
+}
+
+.main-header .main-menu ul ul.submenu.services-menu ul.service-category-menu ul.service-audience-menu > li > a {
+  padding: 6px 14px 6px 20px !important;
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.main-header .main-menu ul ul.submenu.services-menu ul.service-category-menu ul.service-audience-menu > li > a:hover {
+  padding-left: 24px !important;
+  background: rgba(26, 82, 107, 0.85);
+}
+
+.service-category-marker {
+  float: right;
+  margin-left: 8px;
+  font-size: 18px;
+  line-height: 1;
+  transition: transform 0.25s ease;
+}
+
+.services-root.is-open > .services-menu-toggle .service-category-marker {
+  transform: rotate(45deg);
+}
+
+/* A página Services usa os mesmos cards largos da home. */
+.services-directory > .col-lg-6,
+.services-directory > .col-md-6,
+.services-directory > .col-sm-6 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.service-directory-card {
+  height: auto;
+}
+
+.service-directory-card .cat-cap {
+  text-align: center;
+}
+
+.service-directory-card .service-directory__items {
+  text-align: left;
+}
+
+/* Espaço consistente entre o CTA de orçamento/WhatsApp e o conteúdo seguinte. */
+.service-contact-block {
+  margin-bottom: 0 !important;
+  padding-bottom: 36px !important;
+}
+
+.service-contact-block > .mt-2.mb-50 {
+  margin-bottom: 0 !important;
+}
+
+/* Separa discretamente o CTA final da lista de perguntas da NR-10. */
+.nr10-inline-cta {
+  margin: 22px 0 34px !important;
+  padding-top: 16px;
+  border-top: 1px solid rgba(31, 43, 123, 0.14);
+}
+
+.nr10-inline-cta .boxedsm-btn {
+  margin-top: 0;
+}
+
+/* Botão de WhatsApp usado nas chamadas internas das páginas. */
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background-color: #25d366;
+  color: #fff !important;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.2;
+  box-shadow: 1px 1px 2px #888;
+  text-decoration: none !important;
+  transition: background-color .2s ease;
+}
+
+.whatsapp-button:hover,
+.whatsapp-button:focus {
+  background-color: #1ebe5d;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.whatsapp-button .fa-whatsapp {
+  margin: 0;
+}
+
+/* Contraste e hierarquia do menu móvel. */
+.mobile_menu .slicknav_menu .slicknav_nav {
+  background: #0d2d3e !important;
+  border: 1px solid #1f536b;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+}
+
+.mobile_menu .slicknav_menu .slicknav_nav li,
+.mobile_menu .slicknav_menu .slicknav_nav .slicknav_row,
+.mobile_menu .slicknav_menu .slicknav_nav a {
+  background: transparent !important;
+  color: #ffffff !important;
+}
+
+.mobile_menu .slicknav_menu .slicknav_nav a,
+.mobile_menu .slicknav_menu .slicknav_nav .slicknav_row {
+  border-radius: 3px;
+  line-height: 1.4;
+}
+
+.mobile_menu .slicknav_menu .slicknav_nav a:hover,
+.mobile_menu .slicknav_menu .slicknav_nav .slicknav_row:hover {
+  background: #1a526b !important;
+  color: #ffffff !important;
+}
+
+.mobile_menu .slicknav_menu .slicknav_nav .slicknav_arrow {
+  color: #9ed8e8 !important;
+}
+
+/* O SlickNav já fornece o indicador de abertura no celular. */
+.mobile_menu .slicknav_nav .service-category-marker {
+  display: none !important;
+}
+
+.mobile_menu .slicknav_nav li.service-subgroup-label {
+  background: #092434 !important;
+  border-left: 3px solid #55b9d2;
+  color: #c9e4ed !important;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 8px 12px 4px;
+  text-transform: uppercase;
+}
+
+.mobile_menu .slicknav_nav .slicknav_open > .slicknav_row {
+  background: #1a526b !important;
+  border-left: 4px solid #f2a541;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mobile_menu .slicknav_nav .slicknav_open > ul {
+  background: #092434 !important;
+  border-left: 3px solid #55b9d2;
+  margin-left: 0 !important;
+  padding-left: 6px;
+}
+
+.service-group.is-open .service-category-marker {
+  transform: rotate(45deg);
+}
+
+.service-audience.is-open .service-category-marker {
+  transform: rotate(45deg);
+}
+
+.mobile_menu .slicknav_nav li.service-audience > .slicknav_row {
+  background: #14435c !important;
+  border-left: 3px solid #55b9d2;
+  font-weight: 700;
+}
+
+.mobile_menu .slicknav_nav li.service-audience > ul {
+  background: #061d2a !important;
+  border-left-color: #55b9d2;
+  margin-left: 0 !important;
+}
+
+/* No celular, todas as camadas usam a mesma largura do menu principal. A
+   hierarquia permanece visível por cor, bordas e recuo interno do texto. */
+.mobile_menu .slicknav_nav ul.services-menu,
+.mobile_menu .slicknav_nav ul.service-category-menu,
+.mobile_menu .slicknav_nav ul.service-audience-menu {
+  width: 100% !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+@media (min-width: 992px) {
+  .main-header .main-menu ul ul.submenu.services-menu ul.service-category-menu ul.service-audience-menu > li > a {
+    white-space: normal;
+  }
+}
+
 /* line 149, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_headerMenu.scss */
 .header-transparent {
   position: absolute;
@@ -3539,6 +3921,25 @@ hero-btn {
 /* line 233, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_headerMenu.scss */
 .mobile_menu .slicknav_menu .slicknav_nav {
   margin-top: 10px !important;
+}
+
+/* O menu móvel deve ter sua própria rolagem quando os submenus ultrapassarem a tela. */
+@media (max-width: 991px) {
+  .mobile_menu .slicknav_menu .slicknav_nav {
+    max-height: calc(100vh - 76px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Evita que o botão flutuante cubra os itens do menu aberto. */
+  body.mobile-nav-open .link-whatsapp-flut,
+  body.mobile-nav-open #link-whatsapp-fx,
+  body.mobile-nav-open #scrollUp,
+  body.mobile-nav-open #back-top {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 /* line 236, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_headerMenu.scss */
@@ -3693,6 +4094,67 @@ hero-btn {
 /* line 43, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_h1-hero.scss */
 .slider-area .hero__caption {
   overflow: hidden;
+}
+
+/* Keep hero CTAs visible and clear of the image base on every slide. */
+.slider-area .hero-cta {
+  margin-top: 18px;
+  padding-bottom: 42px;
+}
+
+.slider-area .hero-cta > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.slider-area .hero-cta > div > a.button {
+  flex: 0 1 220px;
+  width: auto !important;
+  margin-right: 0 !important;
+}
+
+.slider-area .hero-cta .hero-whatsapp {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content !important;
+  max-width: max-content;
+  padding: 6px 11px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 1px 1px 2px #888;
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  .slider-area .hero-cta {
+    margin-top: 18px;
+    padding-bottom: 42px;
+  }
+}
+
+@media (max-width: 575px) {
+  .slider-area .hero-cta {
+    margin-top: 12px;
+    padding-bottom: 30px;
+  }
+
+  .slider-area .hero-cta > div > a.button,
+  .slider-area .hero-cta .hero-whatsapp {
+    flex: 0 0 auto;
+    justify-content: center;
+    margin-right: 0 !important;
+  }
+
+  .slider-area .hero-cta > div > a.button {
+    flex: 1 1 100%;
+  }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
@@ -4234,6 +4696,97 @@ hero-btn {
   color: #fff;
 }
 
+/* Diretório compacto de serviços */
+.service-directory-card {
+  height: calc(100% - 50px);
+  text-align: left !important;
+}
+
+.service-directory-card .cat-cap > p {
+  margin-bottom: 18px;
+}
+
+.service-directory-card .cat-cap h5 {
+  min-height: 58px;
+}
+
+.service-directory__audience {
+  color: #d80614 !important;
+  font-size: 13px !important;
+  font-weight: 700;
+  letter-spacing: .04em;
+  margin: 18px 0 8px !important;
+  text-transform: uppercase;
+}
+
+.service-directory__items {
+  list-style: none;
+  margin: 0 0 18px;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .service-directory__items {
+    column-count: 2;
+    column-gap: 18px;
+  }
+}
+
+.service-directory__items li {
+  break-inside: avoid;
+  margin-bottom: 7px;
+}
+
+.service-directory__items li a {
+  border-left: 3px solid #d80614;
+  color: #57667e !important;
+  display: block;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  line-height: 1.35;
+  padding: 4px 8px;
+}
+
+.service-directory__item-description {
+  color: #78859a;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.45;
+  margin-top: 3px;
+}
+
+.service-directory__items li a:hover {
+  background: rgba(216, 6, 20, .08);
+  color: #d80614 !important;
+}
+
+.categories-area .single-cat:hover .service-directory__audience {
+  color: #fff !important;
+}
+
+.categories-area .single-cat:hover .service-directory__items li a {
+  color: #fff !important;
+}
+
+.categories-area .single-cat:hover .service-directory__item-description {
+  color: rgba(255, 255, 255, .8);
+}
+
+.categories-area .single-cat:hover .service-directory__items li a:hover {
+  background: rgba(255, 255, 255, .12);
+}
+
+@media (max-width: 575px) {
+  .service-directory-card {
+    height: auto;
+  }
+
+  .service-directory-card .cat-cap h5 {
+    min-height: 0;
+  }
+}
+
 /* line 3, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_about.scss */
 .support-company-area .support-location-img img {
   width: 100%;
@@ -4610,6 +5163,63 @@ hero-btn {
   height: 150px;
   object-fit: contain !important
   }
+
+/* Compact, resilient client-logo carousel on the home page. */
+.index-client-logos {
+  --logo-width: 220px;
+  min-height: 112px;
+  overflow: hidden;
+}
+
+.index-client-logos-track {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  animation: wx2-client-logos 18s linear infinite;
+  will-change: transform;
+}
+
+.index-client-logos .single-brand {
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 var(--logo-width);
+  padding: 12px 20px;
+}
+
+.index-client-logos img {
+  width: auto !important;
+  max-width: 145px;
+  height: 90px !important;
+  object-fit: contain !important;
+  opacity: 1 !important;
+}
+
+@keyframes wx2-client-logos {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(var(--logo-width) * -5));
+  }
+}
+
+@media (max-width: 767px) {
+  .index-client-logos {
+    --logo-width: 50vw;
+  }
+
+  .index-client-logos-track {
+    animation-duration: 15s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .index-client-logos-track {
+    animation-play-state: paused;
+  }
+}
 
 /* line 59, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_team.scss */
 .about-details .about-details-cap h4 {
@@ -8468,5 +9078,15 @@ del {
 
 .logo-wx2sistemas img {
   width: 100px;
-  
+}
+
+/* Afasta o título do ponto principal da foto da viabilidade conjunta. */
+.viability-page .slider-area13 .hero-cap {
+  transform: translateY(115px);
+}
+
+@media (max-width: 767px) {
+  .viability-page .slider-area13 .hero-cap {
+    transform: translateY(60px);
+  }
 }
