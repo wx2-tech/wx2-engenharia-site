@@ -41,7 +41,7 @@ Fluxo obrigatório:
 6. Publicar no Firebase somente após autorização explícita.
 7. Validar as rotas públicas e registrar o resultado do deploy.
 
-Blogs, cases e outras páginas marcadas como pendência não devem ser liberados automaticamente. O `firebase.json` mantém `blog.html` e `blog_details.html` fora da publicação até aprovação específica.
+Blogs e cases devem permanecer fora da publicação enquanto estiverem em revisão. Em 05/11/2026, o responsável pelo projeto aprovou a publicação do blog e dos cases; por isso, o `firebase.json` não os exclui mais do deploy.
 
 ## Organização comercial
 

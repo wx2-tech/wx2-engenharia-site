@@ -41,7 +41,7 @@
 - Não inventar serviços, clientes, normas, resultados, prazos ou escopos que não estejam confirmados.
 - Preservar a arquitetura monolítica e as integrações existentes enquanto não houver decisão explícita para alterá-las.
 - Não gravar senhas, tokens, chaves privadas ou credenciais no repositório, no backlog ou em arquivos públicos.
-- Manter blogs e páginas marcadas como pendência fora da publicação até aprovação específica.
+- Manter blogs e páginas marcadas como pendência fora da publicação até aprovação específica. A aprovação de 05/11/2026 liberou a publicação do blog e dos cases atuais; novas páginas ou revisões continuam sujeitas à mesma aprovação.
 
 ## Registro da conclusão
 
