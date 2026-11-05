@@ -93,11 +93,11 @@
     <main class="whatsapp-redirect-card" aria-labelledby="whatsapp-title">
         <img src="assets/img/logo/logo.jpg" alt="WX2 Engenharia">
         <h1 id="whatsapp-title">Vamos continuar pelo WhatsApp</h1>
-        <p>Seu contato está pronto. Clique no botão abaixo para abrir o WhatsApp e falar com a WX2 Engenharia.</p>
+        <p id="whatsapp-status">Abrindo o WhatsApp para você falar com a WX2 Engenharia…</p>
         <a id="whatsapp-continue" class="whatsapp-button whatsapp-conversion" href="#" target="_blank" rel="noopener">
             <i class="fab fa-whatsapp" aria-hidden="true"></i> Abrir WhatsApp
         </a>
-        <p class="whatsapp-redirect-note">Esta página permanecerá aberta enquanto o WhatsApp é carregado.</p>
+        <p class="whatsapp-redirect-note">Se o WhatsApp não abrir automaticamente, use o botão acima.</p>
     </main>
 
     <script>
@@ -106,15 +106,44 @@
             var message = params.get('text') || 'WX2 Engenharia Fale Conosco';
             var destination = 'https://wa.me/5531972094890?text=' + encodeURIComponent(message);
             var link = document.getElementById('whatsapp-continue');
+            var status = document.getElementById('whatsapp-status');
+            var redirectStarted = false;
 
             link.href = destination;
-            link.addEventListener('click', function () {
+            function registerConversion() {
                 window.dataLayer = window.dataLayer || [];
                 window.dataLayer.push({
                     event: 'whatsapp_conversion_ready',
                     whatsapp_message: message
                 });
+            }
+
+            function redirectToWhatsApp() {
+                if (redirectStarted) {
+                    return;
+                }
+
+                redirectStarted = true;
+                registerConversion();
+                status.textContent = 'Redirecionando para o WhatsApp…';
+                window.setTimeout(function () {
+                    window.location.assign(destination);
+                }, 900);
+            }
+
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                redirectToWhatsApp();
             });
+
+            window.setTimeout(function () {
+                var automaticClick = new MouseEvent('click', {
+                    bubbles: true,
+                    cancelable: true,
+                    view: window
+                });
+                link.dispatchEvent(automaticClick);
+            }, 100);
         }());
     </script>
 </body>
