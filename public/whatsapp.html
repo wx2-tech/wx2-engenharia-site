@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P5G6L3X');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Fale com a WX2 pelo WhatsApp</title>
+    <meta name="description" content="Continue o atendimento da WX2 Engenharia pelo WhatsApp.">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=20261104-menu23">
+    <style>
+        body.whatsapp-redirect-page {
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 32px 16px;
+            background: #f4f6f8;
+        }
+
+        .whatsapp-redirect-card {
+            width: min(100%, 560px);
+            padding: 42px 32px;
+            text-align: center;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 12px 35px rgba(15, 38, 62, .12);
+        }
+
+        .whatsapp-redirect-card img {
+            width: 124px;
+            margin-bottom: 24px;
+        }
+
+        .whatsapp-redirect-card h1 {
+            margin-bottom: 14px;
+            color: #152b3f;
+            font-size: clamp(1.7rem, 4vw, 2.25rem);
+        }
+
+        .whatsapp-redirect-card p {
+            margin-bottom: 24px;
+            color: #526273;
+            line-height: 1.65;
+        }
+
+        .whatsapp-redirect-card .whatsapp-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            min-width: 210px;
+            padding: 12px 24px;
+            border-radius: 4px;
+            background: #25d366;
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 5px 12px rgba(37, 211, 102, .25);
+        }
+
+        .whatsapp-redirect-card .whatsapp-button:hover,
+        .whatsapp-redirect-card .whatsapp-button:focus {
+            background: #1db954;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .whatsapp-redirect-note {
+            margin: 22px 0 0 !important;
+            font-size: .88rem;
+        }
+    </style>
+</head>
+
+<body class="whatsapp-redirect-page">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5G6L3X"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <main class="whatsapp-redirect-card" aria-labelledby="whatsapp-title">
+        <img src="assets/img/logo/logo.jpg" alt="WX2 Engenharia">
+        <h1 id="whatsapp-title">Vamos continuar pelo WhatsApp</h1>
+        <p>Seu contato está pronto. Clique no botão abaixo para abrir o WhatsApp e falar com a WX2 Engenharia.</p>
+        <a id="whatsapp-continue" class="whatsapp-button whatsapp-conversion" href="#" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i> Abrir WhatsApp
+        </a>
+        <p class="whatsapp-redirect-note">Esta página permanecerá aberta enquanto o WhatsApp é carregado.</p>
+    </main>
+
+    <script>
+        (function () {
+            var params = new URLSearchParams(window.location.search);
+            var message = params.get('text') || 'WX2 Engenharia Fale Conosco';
+            var destination = 'https://wa.me/5531972094890?text=' + encodeURIComponent(message);
+            var link = document.getElementById('whatsapp-continue');
+
+            link.href = destination;
+            link.addEventListener('click', function () {
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    event: 'whatsapp_conversion_ready',
+                    whatsapp_message: message
+                });
+            });
+        }());
+    </script>
+</body>
+
+</html>
